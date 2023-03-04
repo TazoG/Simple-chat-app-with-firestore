@@ -13,6 +13,7 @@
 		DAB2E8AC29B33F6800DF8819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AA29B33F6800DF8819 /* Main.storyboard */; };
 		DAB2E8AE29B33F6A00DF8819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AD29B33F6A00DF8819 /* Assets.xcassets */; };
 		DAB2E8B129B33F6A00DF8819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AF29B33F6A00DF8819 /* LaunchScreen.storyboard */; };
+		DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DAB2E8AD29B33F6A00DF8819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB2E8B029B33F6A00DF8819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB2E8B229B33F6A00DF8819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,12 @@
 		DAB2E8A329B33F6800DF8819 /* SimpleChatAppWithFirestore */ = {
 			isa = PBXGroup;
 			children = (
+				DAB2E8BD29B3420E00DF8819 /* Model */,
+				DAB2E8BC29B3420B00DF8819 /* View */,
+				DAB2E8BB29B3420800DF8819 /* ViewModel */,
+				DAB2E8BA29B3420500DF8819 /* Controller */,
+				DAB2E8B929B3420200DF8819 /* API */,
+				DAB2E8B829B341FC00DF8819 /* Utills */,
 				DAB2E8A429B33F6800DF8819 /* AppDelegate.swift */,
 				DAB2E8A629B33F6800DF8819 /* SceneDelegate.swift */,
 				DAB2E8A829B33F6800DF8819 /* ViewController.swift */,
@@ -65,6 +73,49 @@
 				DAB2E8B229B33F6A00DF8819 /* Info.plist */,
 			);
 			path = SimpleChatAppWithFirestore;
+			sourceTree = "<group>";
+		};
+		DAB2E8B829B341FC00DF8819 /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		DAB2E8B929B3420200DF8819 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DAB2E8BA29B3420500DF8819 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DAB2E8BB29B3420800DF8819 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DAB2E8BC29B3420B00DF8819 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAB2E8BD29B3420E00DF8819 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +191,7 @@
 			files = (
 				DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */,
 				DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */,
+				DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */,
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
