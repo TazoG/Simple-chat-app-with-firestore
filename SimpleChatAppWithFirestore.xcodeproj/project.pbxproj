@@ -16,6 +16,7 @@
 		DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */; };
 		DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DB29B393FC0008C352 /* LoginController.swift */; };
 		DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DD29B394130008C352 /* RegistrationController.swift */; };
+		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
 		DAC166DB29B393FC0008C352 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DAC166DD29B394130008C352 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		DAB2E8B829B341FC00DF8819 /* Utills */ = {
 			isa = PBXGroup;
 			children = (
+				DAC166DF29B39B020008C352 /* Extentions.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,
 				DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */,
 				DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */,
+				DAC166E029B39B020008C352 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
