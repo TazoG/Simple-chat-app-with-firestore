@@ -9,8 +9,6 @@ import UIKit
 
 class InputContainerView: UIView {
     
-    
-    
     init(image: UIImage?, textField: UITextField) {
         super.init(frame: .zero)
         

@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol AuthenticationControllerProtocol {
+    func checkFormStatus()
+}
+
 class LoginController: UIViewController {
+    
+    //MARK: - Properies
     
     private var viewModel = LoginViewModel()
     
@@ -87,16 +93,6 @@ class LoginController: UIViewController {
     
     //MARK: - Configure
     
-    func checkFormStatus() {
-        if viewModel.formIsValid {
-            loginButton.isEnabled = true
-            loginButton.backgroundColor = UIColor.systemPink
-        } else {
-            loginButton.isEnabled = false
-            loginButton.backgroundColor = .systemPurple
-        }
-    }
-    
     func configureUI() {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .default
@@ -121,6 +117,16 @@ class LoginController: UIViewController {
         emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }
-    
-   
+}
+
+extension LoginController: AuthenticationControllerProtocol {
+    func checkFormStatus() {
+        if viewModel.formIsValid {
+            loginButton.isEnabled = true
+            loginButton.backgroundColor = UIColor.systemPink
+        } else {
+            loginButton.isEnabled = false
+            loginButton.backgroundColor = .systemPurple
+        }
+    }
 }

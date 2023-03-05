@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DAA6019329B4E4F8007DE182 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6019229B4E4F8007DE182 /* LoginViewModel.swift */; };
+		DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6019429B4F9C3007DE182 /* RegistrationViewModel.swift */; };
 		DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8A429B33F6800DF8819 /* AppDelegate.swift */; };
 		DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8A629B33F6800DF8819 /* SceneDelegate.swift */; };
 		DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8A829B33F6800DF8819 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		DAA6019229B4E4F8007DE182 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DAA6019429B4F9C3007DE182 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		DAB2E8A129B33F6800DF8819 /* SimpleChatAppWithFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChatAppWithFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB2E8A429B33F6800DF8819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB2E8A629B33F6800DF8819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DAA6019629B4F9E9007DE182 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6019229B4E4F8007DE182 /* LoginViewModel.swift */,
+				DAA6019429B4F9C3007DE182 /* RegistrationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		DAB2E89829B33F6800DF8819 = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +125,7 @@
 		DAB2E8BB29B3420800DF8819 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DAA6019229B4E4F8007DE182 /* LoginViewModel.swift */,
+				DAA6019629B4F9E9007DE182 /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -216,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */,
+				DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */,
 				DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */,
 				DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */,
 				DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */,
