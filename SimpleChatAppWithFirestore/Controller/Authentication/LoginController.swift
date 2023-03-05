@@ -9,6 +9,8 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    private var viewModel = LoginViewModel()
+    
     private let iconImage: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(systemName: "bubble.right")
@@ -33,6 +35,8 @@ class LoginController: UIViewController {
         button.backgroundColor = .systemPurple
         button.setTitleColor(.white, for: .normal)
         button.setHeight(height: 50)
+        button.isEnabled = false
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
@@ -60,9 +64,37 @@ class LoginController: UIViewController {
         configureUI()
     }
     
+    //MARK: - @objc funcs for #selectors
+    
+    @objc func handleLogin() {
+        print("DEBUG: handle login...")
+    }
+    
     @objc func handleShowSignUp() {
         let controller = RegistrationController()
         navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc func textDidChange(sender: UITextField) {
+        if sender == emailTextField {
+            viewModel.email = sender.text
+        } else {
+            viewModel.password = sender.text
+        }
+        
+        checkFormStatus()
+    }
+    
+    //MARK: - Configure
+    
+    func checkFormStatus() {
+        if viewModel.formIsValid {
+            loginButton.isEnabled = true
+            loginButton.backgroundColor = UIColor.systemPink
+        } else {
+            loginButton.isEnabled = false
+            loginButton.backgroundColor = .systemPurple
+        }
     }
     
     func configureUI() {
@@ -86,6 +118,8 @@ class LoginController: UIViewController {
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
        
+        emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }
     
    
