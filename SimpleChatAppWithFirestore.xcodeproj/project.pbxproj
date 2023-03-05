@@ -14,6 +14,8 @@
 		DAB2E8AE29B33F6A00DF8819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AD29B33F6A00DF8819 /* Assets.xcassets */; };
 		DAB2E8B129B33F6A00DF8819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AF29B33F6A00DF8819 /* LaunchScreen.storyboard */; };
 		DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */; };
+		DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB44CD29B4782B0024D7CD /* InputContainerView.swift */; };
+		DABB44D029B47DED0024D7CD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB44CF29B47DED0024D7CD /* CustomTextField.swift */; };
 		DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DB29B393FC0008C352 /* LoginController.swift */; };
 		DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DD29B394130008C352 /* RegistrationController.swift */; };
 		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
@@ -29,6 +31,8 @@
 		DAB2E8B029B33F6A00DF8819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB2E8B229B33F6A00DF8819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
+		DABB44CD29B4782B0024D7CD /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
+		DABB44CF29B47DED0024D7CD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DAC166DB29B393FC0008C352 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DAC166DD29B394130008C352 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		DAB2E8BC29B3420B00DF8819 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DABB44CD29B4782B0024D7CD /* InputContainerView.swift */,
+				DABB44CF29B47DED0024D7CD /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,12 +213,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */,
+				DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */,
 				DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */,
 				DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */,
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,
 				DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */,
 				DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */,
 				DAC166E029B39B020008C352 /* Extentions.swift in Sources */,
+				DABB44D029B47DED0024D7CD /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
