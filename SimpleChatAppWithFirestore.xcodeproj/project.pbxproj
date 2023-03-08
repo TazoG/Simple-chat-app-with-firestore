@@ -52,6 +52,7 @@
 		DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DB29B393FC0008C352 /* LoginController.swift */; };
 		DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DD29B394130008C352 /* RegistrationController.swift */; };
 		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
+		DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4E51429B87F2100928D7E /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		DAC166DB29B393FC0008C352 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DAC166DD29B394130008C352 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		DAD4E51429B87F2100928D7E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		DAB2E8B929B3420200DF8819 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				DAD4E51429B87F2100928D7E /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */,
 				DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */,
 				DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */,
+				DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */,
 				DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */,
 				DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */,
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,

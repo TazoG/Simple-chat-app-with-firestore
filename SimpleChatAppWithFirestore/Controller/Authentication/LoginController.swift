@@ -77,7 +77,7 @@ class LoginController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+        AuthService.shared.logUserIn(withEmail: email, password: password) { result, error in
             if let error = error {
                 print("Failed to log in user with error: \(error.localizedDescription)")
                 return
@@ -85,6 +85,7 @@ class LoginController: UIViewController {
             
             self.dismiss(animated: true)
         }
+        
     }
     
     @objc func handleShowSignUp() {
