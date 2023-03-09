@@ -34,7 +34,7 @@ class AuthService {
         
         ref.putData(imageData, metadata: nil) { (meta, error) in
             if let error = error {
-                print("Failed to upload image with error: \(error.localizedDescription)")
+                completion!(error)
                 return
             }
             
@@ -43,7 +43,7 @@ class AuthService {
                 
                 Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { result, error in
                     if let error = error {
-                        print("Failed to create user with error: \(error.localizedDescription)")
+                        completion!(error)
                         return
                     }
                     
