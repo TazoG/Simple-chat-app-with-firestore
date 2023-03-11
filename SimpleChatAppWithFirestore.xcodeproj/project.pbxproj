@@ -53,6 +53,7 @@
 		DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DD29B394130008C352 /* RegistrationController.swift */; };
 		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
 		DACB826229BC62E9003800BF /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826129BC62E9003800BF /* NewMessageController.swift */; };
+		DACB826429BC6E57003800BF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826329BC6E57003800BF /* UserCell.swift */; };
 		DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4E51429B87F2100928D7E /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		DAC166DD29B394130008C352 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		DACB826129BC62E9003800BF /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		DACB826329BC6E57003800BF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		DAD4E51429B87F2100928D7E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 			children = (
 				DABB44CD29B4782B0024D7CD /* InputContainerView.swift */,
 				DABB44CF29B47DED0024D7CD /* CustomTextField.swift */,
+				DACB826329BC6E57003800BF /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */,
 				DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */,
 				DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */,
+				DACB826429BC6E57003800BF /* UserCell.swift in Sources */,
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,
 				DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */,
 				DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */,
