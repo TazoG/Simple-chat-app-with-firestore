@@ -52,6 +52,7 @@
 		DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DB29B393FC0008C352 /* LoginController.swift */; };
 		DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DD29B394130008C352 /* RegistrationController.swift */; };
 		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
+		DACB826229BC62E9003800BF /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826129BC62E9003800BF /* NewMessageController.swift */; };
 		DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4E51429B87F2100928D7E /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		DAC166DB29B393FC0008C352 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DAC166DD29B394130008C352 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		DACB826129BC62E9003800BF /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		DAD4E51429B87F2100928D7E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				DAB2E8BC29B3420B00DF8819 /* View */,
 				DAB2E8BB29B3420800DF8819 /* ViewModel */,
 				DAB2E8BA29B3420500DF8819 /* Controller */,
+				DACB826129BC62E9003800BF /* NewMessageController.swift */,
 				DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */,
 				DAB2E8B929B3420200DF8819 /* API */,
 				DAB2E8B829B341FC00DF8819 /* Utills */,
@@ -342,6 +345,7 @@
 				DAC166E029B39B020008C352 /* Extentions.swift in Sources */,
 				DAA6019329B4E4F8007DE182 /* LoginViewModel.swift in Sources */,
 				DABB44D029B47DED0024D7CD /* CustomTextField.swift in Sources */,
+				DACB826229BC62E9003800BF /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
