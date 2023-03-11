@@ -54,6 +54,8 @@
 		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
 		DACB826229BC62E9003800BF /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826129BC62E9003800BF /* NewMessageController.swift */; };
 		DACB826429BC6E57003800BF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826329BC6E57003800BF /* UserCell.swift */; };
+		DACB826629BC8665003800BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826529BC8665003800BF /* User.swift */; };
+		DACB826829BC874F003800BF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826729BC874F003800BF /* Service.swift */; };
 		DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4E51429B87F2100928D7E /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		DACB826129BC62E9003800BF /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		DACB826329BC6E57003800BF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		DACB826529BC8665003800BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DACB826729BC874F003800BF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		DAD4E51429B87F2100928D7E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD4E51429B87F2100928D7E /* AuthService.swift */,
+				DACB826729BC874F003800BF /* Service.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 		DAB2E8BD29B3420E00DF8819 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DACB826529BC8665003800BF /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -344,6 +350,8 @@
 				DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */,
 				DACB826429BC6E57003800BF /* UserCell.swift in Sources */,
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,
+				DACB826629BC8665003800BF /* User.swift in Sources */,
+				DACB826829BC874F003800BF /* Service.swift in Sources */,
 				DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */,
 				DAC166DC29B393FC0008C352 /* LoginController.swift in Sources */,
 				DAC166E029B39B020008C352 /* Extentions.swift in Sources */,
