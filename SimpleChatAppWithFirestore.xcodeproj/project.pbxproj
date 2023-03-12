@@ -53,6 +53,7 @@
 		DAC166DE29B394130008C352 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DD29B394130008C352 /* RegistrationController.swift */; };
 		DAC166E029B39B020008C352 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC166DF29B39B020008C352 /* Extentions.swift */; };
 		DACA9B4F29BDDB8A006C53D5 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA9B4E29BDDB8A006C53D5 /* ChatController.swift */; };
+		DACA9B5129BDEA67006C53D5 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA9B5029BDEA67006C53D5 /* CustomInputAccessoryView.swift */; };
 		DACB826229BC62E9003800BF /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826129BC62E9003800BF /* NewMessageController.swift */; };
 		DACB826429BC6E57003800BF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826329BC6E57003800BF /* UserCell.swift */; };
 		DACB826629BC8665003800BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB826529BC8665003800BF /* User.swift */; };
@@ -79,6 +80,7 @@
 		DAC166DD29B394130008C352 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		DAC166DF29B39B020008C352 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		DACA9B4E29BDDB8A006C53D5 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		DACA9B5029BDEA67006C53D5 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
 		DACB826129BC62E9003800BF /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		DACB826329BC6E57003800BF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		DACB826529BC8665003800BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				DABB44CD29B4782B0024D7CD /* InputContainerView.swift */,
 				DABB44CF29B47DED0024D7CD /* CustomTextField.swift */,
 				DACB826329BC6E57003800BF /* UserCell.swift */,
+				DACA9B5029BDEA67006C53D5 /* CustomInputAccessoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				DACA9B4F29BDDB8A006C53D5 /* ChatController.swift in Sources */,
 				DABB44D029B47DED0024D7CD /* CustomTextField.swift in Sources */,
 				DACB826229BC62E9003800BF /* NewMessageController.swift in Sources */,
+				DACA9B5129BDEA67006C53D5 /* CustomInputAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
