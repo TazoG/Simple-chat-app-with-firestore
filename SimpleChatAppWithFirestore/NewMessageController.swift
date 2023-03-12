@@ -13,7 +13,7 @@ class NewMessageController: UITableViewController {
     
     //MARK: - Properties
     
-    
+    private var users = [User]()
     
     //MARK: - viewDidLoad
     
@@ -32,7 +32,10 @@ class NewMessageController: UITableViewController {
     //MARK: - API
     
     func fetchUsers() {
-        Service.fetchUsers()
+        Service.fetchUsers { users in
+            self.users = users
+            self.tableView.reloadData()
+        }
     }
     
     //MARK: - Configure UI
@@ -51,12 +54,12 @@ class NewMessageController: UITableViewController {
 
 extension NewMessageController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
+        cell.user = users[indexPath.row]
         return cell
     }
-    
 }
