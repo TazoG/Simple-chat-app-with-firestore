@@ -37,8 +37,7 @@ class ChatController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        
-        print("User in chat controller is \(user.username)")
+        fetchMessages()
     }
     
     override var inputAccessoryView: UIView? {
@@ -49,7 +48,14 @@ class ChatController: UICollectionViewController {
         true
     }
     
-    //MARK: - @objc Selectors
+    //MARK: - API
+    
+    func fetchMessages() {
+        Service.fetchMessages(forUser: user) { messages in
+            self.messages = messages
+            self.collectionView.reloadData()
+        }
+    }
     
     //MARK: - Configure UI
     
@@ -70,6 +76,7 @@ extension ChatController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIndetifier, for: indexPath) as! MessageCell
         cell.message = messages[indexPath.row]
+        cell.message?.user = user
         return cell
     }
 }

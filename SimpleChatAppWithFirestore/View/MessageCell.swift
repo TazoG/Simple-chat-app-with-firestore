@@ -54,7 +54,7 @@ class MessageCell: UICollectionViewCell {
         
         addSubview(bubbleContainer)
         bubbleContainer.layer.cornerRadius = 12
-        bubbleContainer.anchor(top: topAnchor)
+        bubbleContainer.anchor(top: topAnchor, bottom: bottomAnchor)
         bubbleContainer.widthAnchor.constraint(lessThanOrEqualToConstant: 250).isActive = true
         
         bubbleleftAnchor = bubbleContainer.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 12)
@@ -84,5 +84,6 @@ class MessageCell: UICollectionViewCell {
         bubbleleftAnchor.isActive = viewModel.leftAnchorActive
         bubblerightAnchor.isActive = viewModel.rightAnchorActive
         profileImageView.isHidden = viewModel.shouldHideProfileImage
+        profileImageView.sd_setImage(with: viewModel.profileImageUrl)
     }
 }
