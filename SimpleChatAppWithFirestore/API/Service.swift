@@ -23,4 +23,14 @@ class Service {
             })
         }
     }
+    
+    static func uploadMessage(_ message: String, to user: User, completion: ((Error?) -> Void)?) {
+        guard let currendUid = Auth.auth().currentUser?.uid else { return }
+        
+        let data = ["text": message, "fromId": currendUid, "toId": user.uid, "timestamp": Timestamp(date: Date())] as [String : Any]
+        
+        COLLECTION_MESSAGES.document(currendUid).collection(user.uid).addDocument(data: data) { _ in
+            COLLECTION_MESSAGES.document(user.uid).collection(currendUid).addDocument(data: data, completion: completion)
+        }
+    }
 }

@@ -16,6 +16,7 @@
 		DAB2E8AE29B33F6A00DF8819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AD29B33F6A00DF8819 /* Assets.xcassets */; };
 		DAB2E8B129B33F6A00DF8819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AF29B33F6A00DF8819 /* LaunchScreen.storyboard */; };
 		DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */; };
+		DABA75F429C5C43B000C2B80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA75F329C5C43B000C2B80 /* Constants.swift */; };
 		DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB44CD29B4782B0024D7CD /* InputContainerView.swift */; };
 		DABB44D029B47DED0024D7CD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB44CF29B47DED0024D7CD /* CustomTextField.swift */; };
 		DABE115929B786F7003BC48A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABE115829B786F7003BC48A /* GoogleService-Info.plist */; };
@@ -76,6 +77,7 @@
 		DAB2E8B029B33F6A00DF8819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB2E8B229B33F6A00DF8819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
+		DABA75F329C5C43B000C2B80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DABB44CD29B4782B0024D7CD /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		DABB44CF29B47DED0024D7CD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DABE115829B786F7003BC48A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC166DF29B39B020008C352 /* Extentions.swift */,
+				DABA75F329C5C43B000C2B80 /* Constants.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */,
+				DABA75F429C5C43B000C2B80 /* Constants.swift in Sources */,
 				DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */,
 				DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */,
 				DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */,
