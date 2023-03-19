@@ -116,5 +116,6 @@ class ProfileHeader: UIView {
         gradient.locations = [0, 1]
         layer.addSublayer(gradient)
         gradient.frame = bounds
+        layer.backgroundColor = UIColor.cyan.cgColor
     }
 }

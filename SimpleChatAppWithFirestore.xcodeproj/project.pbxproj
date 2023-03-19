@@ -11,6 +11,8 @@
 		DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6019429B4F9C3007DE182 /* RegistrationViewModel.swift */; };
 		DAB0EC9D29C70F2300C380AA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0EC9C29C70F2300C380AA /* ProfileController.swift */; };
 		DAB0EC9F29C710D900C380AA /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0EC9E29C710D900C380AA /* ProfileHeader.swift */; };
+		DAB0ECA129C7762800C380AA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0ECA029C7762800C380AA /* ProfileViewModel.swift */; };
+		DAB0ECA529C7785700C380AA /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0ECA429C7785700C380AA /* ProfileCell.swift */; };
 		DAB2E8A529B33F6800DF8819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8A429B33F6800DF8819 /* AppDelegate.swift */; };
 		DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8A629B33F6800DF8819 /* SceneDelegate.swift */; };
 		DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8A829B33F6800DF8819 /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		DAA6019429B4F9C3007DE182 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		DAB0EC9C29C70F2300C380AA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		DAB0EC9E29C710D900C380AA /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		DAB0ECA029C7762800C380AA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DAB0ECA429C7785700C380AA /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		DAB2E8A129B33F6800DF8819 /* SimpleChatAppWithFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChatAppWithFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB2E8A429B33F6800DF8819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB2E8A629B33F6800DF8819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				DAA6019629B4F9E9007DE182 /* Authentication */,
 				DACA9B5629BE2FE9006C53D5 /* MessageViewModel.swift */,
 				DABA75F729C64C8C000C2B80 /* ConversationViewModel.swift */,
+				DAB0ECA029C7762800C380AA /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				DACA9B5229BE1463006C53D5 /* MessageCell.swift */,
 				DABA75F529C64695000C2B80 /* ConversationCell.swift */,
 				DAB0EC9E29C710D900C380AA /* ProfileHeader.swift */,
+				DAB0ECA429C7785700C380AA /* ProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				DAB0EC9D29C70F2300C380AA /* ProfileController.swift in Sources */,
 				DAB2E8A929B33F6800DF8819 /* ViewController.swift in Sources */,
 				DABA75F429C5C43B000C2B80 /* Constants.swift in Sources */,
+				DAB0ECA129C7762800C380AA /* ProfileViewModel.swift in Sources */,
 				DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */,
 				DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */,
 				DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */,
@@ -384,6 +391,7 @@
 				DACB826429BC6E57003800BF /* UserCell.swift in Sources */,
 				DAB2E8A729B33F6800DF8819 /* SceneDelegate.swift in Sources */,
 				DACB826629BC8665003800BF /* User.swift in Sources */,
+				DAB0ECA529C7785700C380AA /* ProfileCell.swift in Sources */,
 				DACB826829BC874F003800BF /* Service.swift in Sources */,
 				DACA9B5329BE1463006C53D5 /* MessageCell.swift in Sources */,
 				DABA75F829C64C8C000C2B80 /* ConversationViewModel.swift in Sources */,
