@@ -7,9 +7,19 @@
 
 import UIKit
 
+protocol ProfileHeaderDelegate: AnyObject {
+    func dismissController()
+}
+
 class ProfileHeader: UIView {
     
     //MARK: - Properties
+    
+    var user: User? {
+        didSet { populateUserData() }
+    }
+    
+    weak var delegate: ProfileHeaderDelegate?
     
     private let dismissButton: UIButton = {
         let button = UIButton(type: .system)
@@ -66,6 +76,16 @@ class ProfileHeader: UIView {
     }
     
     //MARK: - UI
+    
+    func populateUserData() {
+        guard let user = user else { return }
+        
+        fullnameLabel.text = user.fullname
+        usernameLabel.text = "@" + user.username
+        
+        guard let url = URL(string: user.profileImageUrl) else { return }
+        profileImageView.sd_setImage(with: url)
+    }
     
     func configureUI() {
         configureGradientLayer()
