@@ -24,6 +24,7 @@ class ProfileController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureUI()
         fetchUser()
     }

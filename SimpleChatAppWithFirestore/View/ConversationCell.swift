@@ -10,6 +10,7 @@ import UIKit
 class ConversationCell: UITableViewCell {
     
     //MARK: - Properties
+    
     var conversation: Conversation? {
         didSet { configure() }
     }
@@ -43,6 +44,7 @@ class ConversationCell: UITableViewCell {
     }()
     
     //MARK: - Lifecycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
