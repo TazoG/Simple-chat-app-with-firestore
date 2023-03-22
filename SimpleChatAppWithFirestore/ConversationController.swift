@@ -68,8 +68,6 @@ class ConversationController: UIViewController {
     func authenticateUser() {
         if Auth.auth().currentUser?.uid == nil {
             presentLoginScreen()
-        } else {
-            print("User id is \(Auth.auth().currentUser?.uid)")
         }
     }
     
@@ -87,6 +85,7 @@ class ConversationController: UIViewController {
     func presentLoginScreen() {
         DispatchQueue.main.async {
             let controller = LoginController()
+            controller.delegate = self
             let nav = UINavigationController(rootViewController: controller)
             nav.modalPresentationStyle = .fullScreen
             self.present(nav, animated: true)
@@ -152,13 +151,25 @@ extension ConversationController: UITableViewDelegate {
 
 extension ConversationController: NewMessageControllerDelegate {
     func controller(_ controller: NewMessageController, wantsToStartChatWith user: User) {
-        controller.dismiss(animated: true)
+        dismiss(animated: true)
         showChatController(forUser: user)
     }
 }
 
+//MARK: - ProfileControllerDelegate
+
 extension ConversationController: ProfileControllerDelegate {
     func handleLogout() {
         logout()
+    }
+}
+
+//MARK: - AuthenticationDelegate
+
+extension ConversationController: AuthenticationDelegate {
+    func authenticationComplete() {
+        dismiss(animated: true)
+        configureUI()
+        fetchConversations()
     }
 }

@@ -62,7 +62,6 @@ class ProfileHeader: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -72,7 +71,7 @@ class ProfileHeader: UIView {
     //MARK: - @objc Selectors
     
     @objc func handleDismissal() {
-        
+        delegate?.dismissController()
     }
     
     //MARK: - UI
@@ -114,8 +113,10 @@ class ProfileHeader: UIView {
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
         gradient.locations = [0, 1]
-        layer.addSublayer(gradient)
         gradient.frame = bounds
-        layer.backgroundColor = UIColor.cyan.cgColor
+        layer.addSublayer(gradient)
+        print(bounds)
+
+//        layer.backgroundColor = UIColor.cyan.cgColor
     }
 }
