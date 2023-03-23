@@ -20,6 +20,7 @@
 		DAB2E8AE29B33F6A00DF8819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AD29B33F6A00DF8819 /* Assets.xcassets */; };
 		DAB2E8B129B33F6A00DF8819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB2E8AF29B33F6A00DF8819 /* LaunchScreen.storyboard */; };
 		DAB2E8BF29B342FD00DF8819 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */; };
+		DAB63EB929CC8EDB00A66676 /* Extention+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB63EB829CC8EDB00A66676 /* Extention+UIColor.swift */; };
 		DABA75F429C5C43B000C2B80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA75F329C5C43B000C2B80 /* Constants.swift */; };
 		DABA75F629C64695000C2B80 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA75F529C64695000C2B80 /* ConversationCell.swift */; };
 		DABA75F829C64C8C000C2B80 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA75F729C64C8C000C2B80 /* ConversationViewModel.swift */; };
@@ -88,6 +89,7 @@
 		DAB2E8B029B33F6A00DF8819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB2E8B229B33F6A00DF8819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB2E8BE29B342FD00DF8819 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
+		DAB63EB829CC8EDB00A66676 /* Extention+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIColor.swift"; sourceTree = "<group>"; };
 		DABA75F329C5C43B000C2B80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DABA75F529C64695000C2B80 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		DABA75F729C64C8C000C2B80 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			children = (
 				DAC166DF29B39B020008C352 /* Extentions.swift */,
 				DABA75F329C5C43B000C2B80 /* Constants.swift */,
+				DAB63EB829CC8EDB00A66676 /* Extention+UIColor.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				DAB0ECA129C7762800C380AA /* ProfileViewModel.swift in Sources */,
 				DAA6019529B4F9C3007DE182 /* RegistrationViewModel.swift in Sources */,
 				DABB44CE29B4782B0024D7CD /* InputContainerView.swift in Sources */,
+				DAB63EB929CC8EDB00A66676 /* Extention+UIColor.swift in Sources */,
 				DAD4E51529B87F2100928D7E /* AuthService.swift in Sources */,
 				DACA9B5729BE2FE9006C53D5 /* MessageViewModel.swift in Sources */,
 				DAC9460329C9E82000193456 /* ProfileFooter.swift in Sources */,
