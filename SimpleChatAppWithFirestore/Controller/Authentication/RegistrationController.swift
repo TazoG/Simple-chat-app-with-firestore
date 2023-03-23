@@ -101,8 +101,8 @@ class RegistrationController: UIViewController {
         
         AuthService.shared.createUser(credentials: credentials) { error in
             if let error = error {
-                print("\(error.localizedDescription)")
                 self.showLoader(false)
+                self.showError(error.localizedDescription)
                 return
             }
             

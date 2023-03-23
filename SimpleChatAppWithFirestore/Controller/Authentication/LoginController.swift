@@ -88,8 +88,8 @@ class LoginController: UIViewController {
         
         AuthService.shared.logUserIn(withEmail: email, password: password) { result, error in
             if let error = error {
-                self.showError(error.localizedDescription)
                 self.showLoader(false)
+                self.showError(error.localizedDescription)
                 return
             }
             
