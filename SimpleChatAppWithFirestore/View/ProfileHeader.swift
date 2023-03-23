@@ -87,7 +87,6 @@ class ProfileHeader: UIView {
     }
     
     func configureUI() {
-        configureGradientLayer()
         
         profileImageView.setDimensions(height: 200, width: 200)
         profileImageView.layer.cornerRadius = 200 / 2
@@ -114,9 +113,7 @@ class ProfileHeader: UIView {
         gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
         gradient.locations = [0, 1]
         gradient.frame = bounds
-        layer.addSublayer(gradient)
+        layer.insertSublayer(gradient, at: 0)
         print(bounds)
-
-//        layer.backgroundColor = UIColor.cyan.cgColor
     }
 }

@@ -20,11 +20,11 @@ class ProfileController: UITableViewController {
     
     weak var delegate: ProfileControllerDelegate?
     
-    private lazy var headerView = ProfileHeader(frame: .init(x: 0, y: 0, width: view.frame.width, height: 380))
+    private var headerView: ProfileHeader?
     private let footerView = ProfileFooter()
     
     private var user: User? {
-        didSet { headerView.user = user }
+        didSet { headerView?.user = user }
     }
     
     //MARK: - Lifecycle
@@ -59,9 +59,12 @@ class ProfileController: UITableViewController {
     //MARK: - ConfigureUI
     
     func configureUI() {
+        headerView = ProfileHeader(frame: .init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 380))
+        headerView?.configureGradientLayer()
+        
         tableView.backgroundColor = .white
         tableView.tableHeaderView = headerView
-        headerView.delegate = self
+        headerView?.delegate = self
         tableView.register(ProfileCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.rowHeight = 64
@@ -69,7 +72,7 @@ class ProfileController: UITableViewController {
         
         footerView.delegate = self
         footerView.frame = .init(x: 0, y: 0, width: view.frame.width, height: 100)
-        tableView.tableFooterView = footerView
+        tableView.tableFooterView = footerView  
     }
 }
 
